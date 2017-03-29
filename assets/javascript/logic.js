@@ -1,8 +1,15 @@
 //GifTastic Logic
 
-console.log("linked");
+// console.log("linked");
 
 var games = ["Metroid", "Mario", "Asteroids", "Galaga"];
+
+
+
+// $("#add-game").on("click", function( {
+// 	var form = $("#gaming-input");
+// 	form.clear();
+// }));
 
 function displayGifs() {
 	var game = $(this).attr("data-name");
@@ -72,6 +79,7 @@ function renderButtons() {
           var a = $("<button>");
           // Adding a class of movie to our button
           a.addClass("game");
+          a.addClass("btn btn-primary");
           // Adding a data-attribute
           a.attr("data-name", games[i]);
           // Providing the initial button text
@@ -93,6 +101,8 @@ $("#add-game").on("click", function(event) {
 });
 
 $(document).on("click", ".game", displayGifs);
+
+
 
 
 

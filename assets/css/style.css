@@ -1,0 +1,14 @@
+.gameDiv {
+	display: inline-block;
+	margin: 5px;
+}
+
+#search-form {
+	margin: 10px;
+	text-align: right;
+}
+
+h1 {
+
+	text-align: center;
+}
