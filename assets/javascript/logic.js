@@ -1,16 +1,12 @@
 //GifTastic Logic
 
-// console.log("linked");
+// Initial variable values for buttons
 
 var games = ["Metroid", "Mario", "Asteroids", "Galaga"];
 
+// Functions
 
-
-// $("#add-game").on("click", function( {
-// 	var form = $("#gaming-input");
-// 	form.clear();
-// }));
-
+// Function to display the gifs using an AJAX call - Displays 10 gifs on the search from the Giphy API using the value of the button
 function displayGifs() {
 	var game = $(this).attr("data-name");
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + game + "&api_key=dc6zaTOxFJmzC&rating=pg&limit=10";
@@ -103,22 +99,5 @@ $("#add-game").on("click", function(event) {
 $(document).on("click", ".game", displayGifs);
 
 
-
-
-
-
-
-
-
-
-
+// Call the renderButtons function to init the app
 renderButtons();
-
-
-
-
-
-
-
-
-
